@@ -1,0 +1,17 @@
+LDA 8000
+MOV B,A
+LDA 8001
+MOV C,A
+CPI 00
+JZ LOOP
+XRA A
+LOOP1: add  e
+DCR  C
+jz  LOOP
+jmp  LOOP1
+LOOP: STA 8002
+rst  1
+
+
+
+
